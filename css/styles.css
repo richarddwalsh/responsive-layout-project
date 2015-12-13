@@ -1,0 +1,157 @@
+/* Global Layout Set-up */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #4a4a4a;
+  background: #fafafa;
+  font-size: 1em;
+}
+
+header, section {
+  padding: 50px 0;
+}
+
+footer {
+  padding: 25px;
+  border-top: 1px solid #E7E7E7;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2.section-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Header & Navigation */
+
+.main-nav {
+  width: 100%;
+  min-height: 30px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.nav {
+  padding: 0;
+}
+
+.nav li {
+  display: block;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.nav li a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: rebeccapurple;
+}
+
+#me {
+  clear: both;
+}
+
+.about-me {
+  font-weight: 300;
+}
+
+/* Portfolio */
+
+#portfolio {
+  background-color: white;
+}
+
+.portfolio-item {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.portfolio-item .portfolio-image {
+  width: 100%;
+}
+
+.portfolio-item .portfolio-item-title {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.portfolio-item .portfolio-item-description {
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+/* Responsive Tablet Queries */
+
+@media screen and (min-width: 720px) {
+
+  .nav li {
+    background-color: transparent;
+    display: inline-block;
+    padding: 20px 40px;
+    margin-bottom: 0;
+  }
+
+  .portfolio-item {
+    float: left;
+    width: 40%;
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .page-title {
+    float: left;
+    width: 50%;
+  }
+  .main-nav {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    float: right;
+    right: 0;
+  }
+
+  .portfolio-item {
+    width: 23%;
+    margin: 5%;
+  }
+
+}
+
+/* Contact */
+
+#contact {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Footer */
